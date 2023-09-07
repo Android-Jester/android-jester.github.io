@@ -12,7 +12,7 @@
         <pubDate>Thu, 07 Sep 2023 22:20:32 +0000</pubDate>
         
         <guid>https://example.org/p/vscode-setup-guide-for-c-and-c-/</guid>
-        <description>&lt;p&gt;As Visual Studio Code is one of the most used code editor, beginner in C and C++ programming have difficulty setting up this editor for C and C++ programming&lt;/p&gt;
+        <description>&lt;img src="https://www.gravatar.com/avatar/24a44e8bc08cd0c6e2fd43378eeb25b2?s=192&d=identicon&r=PG&f=y&so-version=2" alt="Featured image of post VSCode Setup Guide for C and C&#43;&#43;" /&gt;&lt;p&gt;As Visual Studio Code is one of the most used code editor, beginner in C and C++ programming have difficulty setting up this editor for C and C++ programming&lt;/p&gt;
 &lt;p&gt;Here I would like to help by setting up VSCode with Clangd&lt;/p&gt;
 &lt;p&gt;Clangd is an LSP that helps coding in C or C++ a easier&lt;/p&gt;
 &lt;p&gt;We would be setting up our C project for writing a simple window using the GTK libraries&lt;/p&gt;
@@ -786,6 +786,15 @@ Using the guide from &lt;a class=&#34;link&#34; href=&#34;https://conan.io/downl
         
         <guid>https://example.org/archives/</guid>
         <description></description>
+        </item>
+        <item>
+        <title>Projects</title>
+        <link>https://example.org/projects/</link>
+        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.org/projects/</guid>
+        <description>&lt;p&gt;A few projects that are kinda incomplete&lt;/p&gt;
+</description>
         </item>
         <item>
         <title>Search</title>
