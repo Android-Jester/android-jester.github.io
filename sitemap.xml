@@ -3,7 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://example.org/</loc>
-    <lastmod>2023-09-07T22:20:32+00:00</lastmod>
+    <lastmod>2023-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/about-me/</loc>
+    <lastmod>2023-09-16T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://example.org/page/</loc>
+    <lastmod>2023-09-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/tags/c/</loc>
     <lastmod>2023-09-07T22:20:32+00:00</lastmod>
@@ -41,13 +47,7 @@
     <loc>https://example.org/p/vscode-setup-guide-for-c-and-c-/</loc>
     <lastmod>2023-09-07T22:20:32+00:00</lastmod>
   </url><url>
-    <loc>https://example.org/about-me/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>https://example.org/archives/</loc>
-    <lastmod>2023-09-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.org/page/</loc>
     <lastmod>2023-09-07T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://example.org/projects/</loc>

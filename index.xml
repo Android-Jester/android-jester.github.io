@@ -6,7 +6,15 @@
         <description>Recent content on Android-Jester</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en</language>
-        <lastBuildDate>Thu, 07 Sep 2023 22:20:32 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sat, 16 Sep 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>About Me</title>
+        <link>https://example.org/about-me/</link>
+        <pubDate>Sat, 16 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.org/about-me/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>Go Starter</title>
         <link>https://example.org/p/go-starter/</link>
         <pubDate>Thu, 07 Sep 2023 22:20:32 +0000</pubDate>
@@ -2191,14 +2199,6 @@ Using the guide from &lt;a class=&#34;link&#34; href=&#34;https://conan.io/downl
 &gt;&lt;/p&gt;
 &lt;p&gt;I hope this was a short and informative guide as this is my first post, please if there are any issues or suggestions for improvements with the process, please let me know in the comments&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>About Me</title>
-        <link>https://example.org/about-me/</link>
-        <pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate>
-        
-        <guid>https://example.org/about-me/</guid>
-        <description></description>
         </item>
         <item>
         <title>Archives</title>
