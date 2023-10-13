@@ -420,7 +420,7 @@
 
 
                 <time class="article-time--reading">
-                    17 minute read
+                    18 minute read
                 </time>
             </div>
         
@@ -435,7 +435,75 @@
     <section class="article-content">
     
     
-    <h2 id="go-starter">Go Starter</h2>
+    <h1 id="table-of-content">Table of Content</h1>
+<!-- TOC start (generated with https://github.com/derlin/bitdowntoc) -->
+<ul>
+<li><a class="link" href="#go-starter" >Go Starter</a></li>
+<li><a class="link" href="#installing-and-using-go" >Installing and using Go</a>
+<ul>
+<li><a class="link" href="#debianubuntu" >Debian/Ubuntu</a></li>
+<li><a class="link" href="#arch-linux" >Arch Linux</a></li>
+</ul>
+</li>
+<li><a class="link" href="#go-env-package-and-modules" >Go env, package and modules</a>
+<ul>
+<li><a class="link" href="#go-env" >go env</a></li>
+<li><a class="link" href="#modules-and-workspaces" >modules and workspaces</a></li>
+<li><a class="link" href="#packages" >Packages</a></li>
+</ul>
+</li>
+<li><a class="link" href="#go-coding" >Go coding</a>
+<ul>
+<li><a class="link" href="#variables-constants-and-functions" >Variables, constants and Functions</a>
+<ul>
+<li><a class="link" href="#data-types" >Data Types</a></li>
+<li><a class="link" href="#declaration" >declaration</a>
+<ul>
+<li><a class="link" href="#variable" >Variable</a></li>
+<li><a class="link" href="#functions" >Functions</a></li>
+<li><a class="link" href="#access-level" >Access Level</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#defer" >defer</a></li>
+<li><a class="link" href="#loops-and-decisions" >Loops and decisions</a>
+<ul>
+<li><a class="link" href="#for" >For</a></li>
+<li><a class="link" href="#decisions" >Decisions</a>
+<ul>
+<li><a class="link" href="#ifelse" >If/else</a></li>
+<li><a class="link" href="#switches" >Switches</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#array-and-slices" >Array and Slices</a>
+<ul>
+<li><a class="link" href="#array" >Array</a></li>
+<li><a class="link" href="#slice" >Slice</a></li>
+</ul>
+</li>
+<li><a class="link" href="#structs-and-interfaces-and-maps" >Structs and Interfaces and Maps</a>
+<ul>
+<li><a class="link" href="#structs" >Structs</a></li>
+<li><a class="link" href="#interfaces" >Interfaces</a>
+<ul>
+<li><a class="link" href="#empty-interface" >Empty Interface</a></li>
+<li><a class="link" href="#type-assertion" >Type assertion</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="link" href="#maps" >Maps</a></li>
+<li><a class="link" href="#null-references" >Null references</a></li>
+<li><a class="link" href="#error-interfaces" >Error Interfaces</a></li>
+</ul>
+</li>
+</ul>
+<!-- TOC end -->
+<!-- TOC --><a name="go-starter"></a>
+<h2 id="go-starter">Go Starter</h2>
 <p>Go is a programming language designed for the open source community, it is
 supported by Google and has a simlar way of operating to C programming, it
 depends on its own environment variable system for most to all of its operations
@@ -444,6 +512,7 @@ doesn&rsquo;t have null based errors but rather handles them in a way which woul
 discussed in [Error Handling](#Error Handling) Now before we get started on the
 syntax of Go and how it differs from other programming languages lets look at
 how Go operates with its files</p>
+<!-- TOC --><a name="installing-and-using-go"></a>
 <h2 id="installing-and-using-go">Installing and using Go</h2>
 <ul>
 <li>The guides of downloading and installing the go compiler and its standard
@@ -452,6 +521,7 @@ library and tools can be found <a class="link" href="https://go.dev/dl/"  target
 <li>For linux systems, you can use your distributions package manager to install
 go, for example for debian and Arch distros</li>
 </ul>
+<!-- TOC --><a name="debianubuntu"></a>
 <h3 id="debianubuntu">Debian/Ubuntu</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -463,7 +533,8 @@ go, for example for debian and Arch distros</li>
 </span></span><span class="line"><span class="cl">sudo apt install golang-go
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="arch-linux">Arch Linux</h3>
+</div><!-- TOC --><a name="arch-linux"></a>
+<h3 id="arch-linux">Arch Linux</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -472,7 +543,9 @@ go, for example for debian and Arch distros</li>
 <pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -Sy go
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="go-env-package-and-modules">Go env, package and modules</h2>
+</div><!-- TOC --><a name="go-env-package-and-modules"></a>
+<h2 id="go-env-package-and-modules">Go env, package and modules</h2>
+<!-- TOC --><a name="go-env"></a>
 <h3 id="go-env">go env</h3>
 <p>Go has a lot of go based environment variables to look through all of them,
 these only work within a go project and cannot be access in a bash environment
@@ -599,6 +672,7 @@ change the C compiler used from gcc to clang, I can do</li>
 <p>You can also view it as json using <code>go env -json</code></p>
 </li>
 </ul>
+<!-- TOC --><a name="modules-and-workspaces"></a>
 <h3 id="modules-and-workspaces">modules and workspaces</h3>
 <ul>
 <li>Go modules are like project files, a module is the root of all packages when
@@ -683,7 +757,8 @@ special way to log my files, a module I can use is
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="packages">Packages</h3>
+</div><!-- TOC --><a name="packages"></a>
+<h3 id="packages">Packages</h3>
 <ul>
 <li>A package unlike a module is a subfolder and its files</li>
 <li>For every go program, the first file which contains the main function must
@@ -751,9 +826,12 @@ be called as part of the module</li>
 much about the code as it would be explained in detail later but here you
 could see that all go files in the directory common is taken and shown</li>
 </ul>
+<!-- TOC --><a name="go-coding"></a>
 <h2 id="go-coding">Go coding</h2>
 <p>Well that is enough of the modules, let&rsquo;s try to understand some go syntax</p>
+<!-- TOC --><a name="variables-constants-and-functions"></a>
 <h3 id="variables-constants-and-functions">Variables, constants and Functions</h3>
+<!-- TOC --><a name="data-types"></a>
 <h4 id="data-types">Data Types</h4>
 <ul>
 <li>The current data types of Go are
@@ -769,7 +847,9 @@ could see that all go files in the directory common is taken and shown</li>
 </ul>
 </li>
 </ul>
+<!-- TOC --><a name="declaration"></a>
 <h4 id="declaration">declaration</h4>
+<!-- TOC --><a name="variable"></a>
 <h5 id="variable">Variable</h5>
 <ul>
 <li>Variables are declared in two ways</li>
@@ -843,7 +923,8 @@ could see that all go files in the directory common is taken and shown</li>
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">i</span><span class="p">,</span> <span class="nx">j</span> <span class="o">:=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="functions">Functions</h5>
+</div><!-- TOC --><a name="functions"></a>
+<h5 id="functions">Functions</h5>
 <ul>
 <li>Functions are declared with the <code>func</code> keyword, and carry arguments, the arguments can be declared with the same time and a function can return more than one value</li>
 </ul>
@@ -904,7 +985,8 @@ could see that all go files in the directory common is taken and shown</li>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="access-level">Access Level</h5>
+</div><!-- TOC --><a name="access-level"></a>
+<h5 id="access-level">Access Level</h5>
 <ul>
 <li>Variables and functions in Go are private when their identifiers are in camel case and limited only to that package meaning no matter how many go files you create, those functions and variables cannot escape</li>
 <li>For example</li>
@@ -995,7 +1077,8 @@ could see that all go files in the directory common is taken and shown</li>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="defer">defer</h3>
+</div><!-- TOC --><a name="defer"></a>
+<h3 id="defer">defer</h3>
 <p>The <code>defer</code> keyword halts and stacks function calls that you want to be called last and runs that function at the end
 These deferred function calls can be stacked in a First In First Out way</p>
 <div class="highlight"><div class="chroma">
@@ -1022,7 +1105,9 @@ These deferred function calls can be stacked in a First In First Out way</p>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="loops-and-decisions">Loops and decisions</h3>
+</div><!-- TOC --><a name="loops-and-decisions"></a>
+<h3 id="loops-and-decisions">Loops and decisions</h3>
+<!-- TOC --><a name="for"></a>
 <h4 id="for">For</h4>
 <p>Go contains only one keyword for loops and that is <code>for</code>, this compared to other languages does the functionality of both <code>for</code> and <code>while</code> and this is demonstrated below</p>
 <div class="highlight"><div class="chroma">
@@ -1098,7 +1183,9 @@ These deferred function calls can be stacked in a First In First Out way</p>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="decisions">Decisions</h4>
+</div><!-- TOC --><a name="decisions"></a>
+<h4 id="decisions">Decisions</h4>
+<!-- TOC --><a name="ifelse"></a>
 <h5 id="ifelse">If/else</h5>
 <ul>
 <li><code>If/else</code> statements are basically the same for other languages and used to handle decisions in code</li>
@@ -1152,7 +1239,8 @@ These deferred function calls can be stacked in a First In First Out way</p>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="switches">Switches</h5>
+</div><!-- TOC --><a name="switches"></a>
+<h5 id="switches">Switches</h5>
 <p>Switches can be used to replace the conditions of <code>if</code> statements and can be used relatively differently from the usual switches in other languages</p>
 <p>Switches in Go, parse data top to bottom meaning that it doesn&rsquo;t matter what the conditional is, either the result being checked for the value to compare against, it will always read and compare the value from the top to the bottom and compare it to whatever is provided
 You can also skip the conditional if you want</p>
@@ -1276,7 +1364,9 @@ You can also skip the conditional if you want</p>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="array-and-slices">Array and Slices</h3>
+</div><!-- TOC --><a name="array-and-slices"></a>
+<h3 id="array-and-slices">Array and Slices</h3>
+<!-- TOC --><a name="array"></a>
 <h4 id="array">Array</h4>
 <ul>
 <li>Arrays in Go are a special datatype that holds a <strong>limited</strong> amount of data limited to a specific datatype</li>
@@ -1309,7 +1399,8 @@ You can also skip the conditional if you want</p>
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h4 id="slice">Slice</h4>
+</div><!-- TOC --><a name="slice"></a>
+<h4 id="slice">Slice</h4>
 <ul>
 <li>Slices on their own are almost the opposite of an array, they hold no strict length on their own but behave similar to an array</li>
 <li>They are declared similar to an array but the length isn&rsquo;t included</li>
@@ -1437,7 +1528,9 @@ using the the <code>apppend()</code> function</p>
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="nx">a</span><span class="p">[:]</span> <span class="c1">// this just takes all
 </span></span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="structs-and-interfaces-and-maps">Structs and Interfaces and Maps</h3>
+</div><!-- TOC --><a name="structs-and-interfaces-and-maps"></a>
+<h3 id="structs-and-interfaces-and-maps">Structs and Interfaces and Maps</h3>
+<!-- TOC --><a name="structs"></a>
 <h4 id="structs">Structs</h4>
 <p>Structs are like a type system that are used to contain a set of data and also can contain their own functions, in Go, they are defined using the <code>type</code> keyword</p>
 <div class="highlight"><div class="chroma">
@@ -1550,6 +1643,7 @@ using the the <code>apppend()</code> function</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p>In this example, methods are created from the struct <code>MyStruct</code>, but if you look closely, they don&rsquo;t behave the same, the <code>initial()</code> method behaves like a method you would find in Java or C# but the <code>NewStruct()</code> method doesn&rsquo;t, it doesn&rsquo;t have a pointer reference and thus only takes the value of the struct but doesn&rsquo;t update the value but rather just takes data from that struct as if another struct has been created</p>
+<!-- TOC --><a name="interfaces"></a>
 <h4 id="interfaces">Interfaces</h4>
 <p>Interfaces are basically a set of method signatures that are defines the structs that implement them, they work similarly to implementation of interfaces in some languages like C# or JAVA but differ since they act as place holders for struct values that implement their methods
 The value of an interface type can hold any value that implements those methods</p>
@@ -1615,7 +1709,8 @@ The value of an interface type can hold any value that implements those methods<
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="empty-interface">Empty Interface</h5>
+</div><!-- TOC --><a name="empty-interface"></a>
+<h5 id="empty-interface">Empty Interface</h5>
 <p>Interface can be made without any value and they can hold any value of any type it is instantiated with</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -1651,7 +1746,8 @@ The value of an interface type can hold any value that implements those methods<
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h5 id="type-assertion">Type assertion</h5>
+</div><!-- TOC --><a name="type-assertion"></a>
+<h5 id="type-assertion">Type assertion</h5>
 <p>A <em>type assertion</em> provides access to an interface value&rsquo;s underlying concrete value, it is done using <code>t = i.(&lt;Type&gt;)</code> or <code>t, ok := i.(&lt;Type&gt;)</code></p>
 <ul>
 <li>This statement asserts that the interface value <code>i</code> holds the concrete type <code>T</code> and assigns the underlying <code>T</code> value to the variable <code>t</code>.</li>
@@ -1733,6 +1829,7 @@ The value of an interface type can hold any value that implements those methods<
 </span><span class="lnt">43
 </span><span class="lnt">44
 </span><span class="lnt">45
+</span><span class="lnt">46
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-go" data-lang="go"><span class="line"><span class="cl"><span class="kd">func</span> <span class="nf">do</span><span class="p">(</span><span class="nx">i</span> <span class="kd">interface</span><span class="p">{})</span> <span class="p">{</span>
@@ -1754,6 +1851,7 @@ The value of an interface type can hold any value that implements those methods<
 </span></span><span class="line"><span class="cl">	<span class="s">```
 </span></span></span><span class="line"><span class="cl"><span class="s">
 </span></span></span><span class="line"><span class="cl"><span class="s">
+</span></span></span><span class="line"><span class="cl"><span class="s">&lt;!-- TOC --&gt;&lt;a name=&#34;maps&#34;&gt;&lt;/a&gt;
 </span></span></span><span class="line"><span class="cl"><span class="s">### Maps
 </span></span></span><span class="line"><span class="cl"><span class="s">- Maps are like hash-maps, they contain a key and value pair, they are defined using the expression `</span><span class="kd">map</span><span class="p">[</span><span class="nx">T1</span><span class="p">]</span><span class="nx">T2</span><span class="s">`, where T1 is the type that acts as a key and T2 represents the value, you can create a map using the `</span><span class="nb">make</span><span class="p">()</span><span class="s">` expression similar to how slices are created
 </span></span></span><span class="line"><span class="cl"><span class="s">- Maps like slices don&#39;t have a defined length thus you can continuously make key-value pairs in a already instantciated map
@@ -1782,7 +1880,8 @@ The value of an interface type can hold any value that implements those methods<
 </span></span><span class="line"><span class="cl"><span class="nb">delete</span><span class="p">(</span><span class="nx">m</span><span class="p">,</span> <span class="s">&#34;Bell Labs&#34;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h3 id="null-references">Null references</h3>
+</div><!-- TOC --><a name="null-references"></a>
+<h3 id="null-references">Null references</h3>
 <p>When a variable isn&rsquo;t instantiated it contains a null value
 Null values are represented by the zeros or nil of their types</p>
 <ul>
@@ -1791,6 +1890,7 @@ Null values are represented by the zeros or nil of their types</p>
 <li><code>&quot;&quot;</code> (the empty string) for strings.</li>
 <li>nil is returned from others such as structs and interfaces</li>
 </ul>
+<!-- TOC --><a name="error-interfaces"></a>
 <h3 id="error-interfaces">Error Interfaces</h3>
 <ul>
 <li>This is a built interface that is used to handle errors</li>
